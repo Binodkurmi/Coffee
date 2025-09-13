@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+</head>
+<style>
+    header {
+        background-color: rgb(0, 0, 0);
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #logo_img img {
+        padding: 10px;
+    }
+
+    #nav_list {
+        width: 40%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 20px;
+        color: rgb(250, 250, 250);
+    }
+
+    a:hover {
+        color: rgb(202, 183, 183);
+        text-decoration: underline;
+    }
+
+    #section1 {
+        height: 600px;
+        width: 100%;
+        background-image: url(hero_img.jpg);
+        background-size: cover;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    #sectiondetails {
+        float: right;
+        color: white;
+        width: 50%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #sectiondetails h1 {
+        font-size: 60px;
+    }
+
+    #btn_shop {
+        height: 50px;
+        width: 150px;
+        border: none;
+        cursor: pointer;
+    }
+
+    #btn_shop:hover {
+        height: 51px;
+        width: 151px;
+        color: white;
+        background-color: black;
+        border: none;
+    }
+
+    #section2 {
+        width: 100%;
+        height: 600px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    #sect_h1 {
+        font-size: 40px;
+    }
+
+    #section2_3 {
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #section3 {
+        background-image: url(paper.jpg);
+        width: 100%;
+        height: 650px;
+        background-size: cover;
+    }
+
+    #section3_1 {
+        text-align: center;
+        padding-top: 20px;
+
+    }
+
+    #section3_2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    #section3_2 img {
+        width: 300px;
+    }
+
+    #section4 {
+        background-image: url(https://cdn.pixabay.com/photo/2015/11/06/13/21/texture-1027797_960_720.jpg);
+        width: 100%;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #section5 {
+        background-color: rgb(240, 222, 196);
+        width: 100%;
+        height: 400px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #section6 {
+        background-image: url(paper.jpg);
+        width: 100%;
+        height: 600px;
+        background-size: cover;
+        background-size: cover;
+        flex-wrap: wrap;
+    }
+
+    #section6_1 {
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #section6_1 h1 {
+        font-size: 50px;
+    }
+
+    #section6_2 {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    #section6_2 img {
+        width: 130px;
+    }
+
+    #section7 {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+
+    }
+
+    #section7_2 {
+        width: 100%;
+        height: 330px;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+
+    }
+
+    #section8 {
+        width: 100%;
+        display: flex;
+        margin-bottom: 30px;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    #section8 img {
+        margin-top: 20px;
+        height: 100%;
+        width: 200px;
+    }
+
+    #section9 {
+        background-image: url(paper.jpg);
+        width: 100%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-size: cover;
+    }
+
+    #section10 {
+        width: 100%;
+        height: 800px;
+        background-image: url('coffee2.jpg');
+        background-size: cover;
+        background-color: rgb(27, 27, 29);
+        background-blend-mode: multiply;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        padding-top: 20px;
+        align-items: center;
+    }
+
+    #section10_1 {
+        display: flex;
+        align-items: center;
+
+    }
+
+    #email_inp {
+        height: 45px;
+        width: 400px;
+        font-size: 20px;
+        border: none;
+    }
+
+    #section11 {
+        background-color: black;
+        color: white;
+        height: 200px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #section11_1 {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #section11_2 {
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+    }
+</style>
+
+<body>
+    <header>
+        <div id="logo_img">
+            <img src="logo.png">
+        </div>
+
+        <div id="nav_list">
+            <a href="/">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </header>
+
+    <div id="section1">
+        <div id="sectiondetails">
+            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-slider-img-1.png">
+            <h1>ℂ𝕆𝔽𝔽𝔼𝔼 𝔽𝔸ℂ𝕋𝕆ℝ𝕐</h1>
+            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/slider-separator-img.png">
+            <p>At our coffee factory, every bean tells a story of dedication,passion, and quality.<br>
+                From carefully sourcing the finest coffee beans to expertly roasting them<br>
+                to perfection, we ensure that each step of the process reflects<br>
+                our commitment to excellence</p>
+            <button id="btn_shop">𝓢𝓱𝓸𝓹_𝓝𝓸𝔀</button>
+        </div>
+    </div>
+
+    <div id="section2">
+        <div id="section2_2">
+            <h1 id="sect_h1">𝓞𝓾𝓻 𝓓𝓮𝓵𝓲𝓬𝓲𝓸𝓾𝓼 𝓞𝓯𝓯𝓮𝓻</h1>
+            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/title-separator.png">
+            <p>With state-of-the-art technology combined with traditional<br>
+                expertise, we transform raw beans int essence of coffee.</p>
+        </div>
+        <div id="section2_3">
+            <div>
+                <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h2-custom-icon-5.png" alt="">
+                <h3>TYPES OF COFFEE</h3>
+                <p>Coffee warms hearts, awakens minds<br> moments, and connects people</p>
+            </div>
+            <div>
+                <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h2-custom-icon-6.png" alt="">
+                <h3>Bean Varieties</h3>
+                <p>Coffee warms hearts, awakens minds<br> moments, and connects people</p>
+            </div>
+            <div>
+                <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h2-custom-icon-7.png" alt="">
+                <h3>Coffee & Pastry</h3>
+                <p>Coffee warms hearts, awakens minds<br> moments, and connects people</p>
+            </div>
+            <div>
+                <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h2-custom-icon-8.png" alt="">
+                <h3>Coffee To Go</h3>
+                <p>Coffee warms hearts, awakens minds<br> moments, and connects people</p>
+            </div>
+        </div><br><br><br>
+        <button id="btn_shop">𝓢𝓔𝓔 𝓜𝓞𝓡𝓔</button>
+    </div>
+
+    <div id="section3">
+        <div id="section3_1">
+            <h1 id="sect_h1">𝓣𝓱𝓮 𝓒𝓸𝓯𝓯𝓮𝓮 𝓗𝓮𝓻𝓪𝓵𝓭</h1>
+            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/title-separator.png">
+            <p>Coffee culture is diverse and fascinating, with each country<br>
+                adding its own traditions. In Italy, espresso and cappuccino<br>
+                are daily rituals, while in Turkey.</p>
+
+        </div>
+        <div id="section3_2">
+            <div>
+                <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/blog-1-img-1.jpg">
+                <h3>𝓟𝓻𝓮𝓹 𝓣𝓮𝓬𝓱𝓷𝓲𝓺𝓾𝓮𝓼</h3>
+                <p>With state-of-the-art technology combined with traditional<br>
+                    expertise, we transform raw beans int essence of coffee.</p>
+            </div>
+            <div>
+                <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/blog-1-img-2.jpg">
+                <h3>𝓕𝓻𝓮𝓷𝓬𝓱 𝓟𝓻𝓮𝓼𝓼</h3>
+                <p>Coffee culture is diverse and fascinating, with each country<br>
+                    adding its own traditions. In Italy, espresso and cappuccino<br>
+                    are daily rituals, while in Turkey.</p>
+            </div>
+            <div>
+                <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/blog-1-img-3.jpg">
+                <h3>𝓣𝓾𝓻𝓴𝓲𝓼𝓱 𝓘𝓫𝓻𝓲𝓴</h3>
+                <p>Coffee culture is diverse and fascinating, with each country<br>
+                    adding its own traditions. In Italy, espresso and cappuccino<br>
+                    are daily rituals, while in Turkey.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="section4">
+        <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-single-img-1-250x226.png">
+    </div>
+
+    <div id="section5">
+        <div>
+            <h1>250</h1>
+            <h3>Varieties of Coffee</h3>
+            <p>Lorem ipsum dolor sit amet,<br>
+                consectetuer adipiscing elit aenean</p>
+        </div>
+        <div>
+            <h1>123</h1>
+            <h3>Hours of Testing</h3>
+            <p>Lorem ipsum dolor sit amet,<br>
+                consectetuer adipiscing elit aenean</p>
+        </div>
+        <div>
+            <h1>321</h1>
+            <h3>Coffee Markets</h3>
+            <p>Lorem ipsum dolor sit amet,<br>
+                consectetuer adipiscing elit aenean</p>
+        </div>
+        <div>
+            <h1>987</h1>
+            <h3>Coffee Brands</h3>
+            <p>Lorem ipsum dolor sit amet,<br>
+                consectetuer adipiscing elit aenean</p>
+        </div>
+    </div>
+
+    <div id="section6">
+        <div id="section6_1">
+            <h1>𝔒𝔫𝔩𝔦𝔫𝔢 ℭ𝔬𝔣𝔣𝔢𝔢 𝔖𝔥𝔬𝔭</h1>
+            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/slider-separator-img.png">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+                sed do eiusmod tempor incididunt ut labore et dolore</p>
+        </div>
+        <div id="section6_2">
+            <div>
+                <img src="coffee_image.png">
+                <h3>Ethiopia Coffee</h3>
+                <p>$15.00</p>
+            </div>
+            <div>
+                <img src="coffee_image.png">
+                <h3>Ethiopia Coffee</h3>
+                <p>$15.00</p>
+            </div>
+            <div>
+                <img src="coffee_image.png">
+                <h3>Ethiopia Coffee</h3>
+                <p>$15.00</p>
+            </div>
+            <div>
+                <img src="coffee_image.png">
+                <h3>Ethiopia Coffee</h3>
+                <p>$15.00</p>
+            </div>
+            <div>
+                <img src="coffee_image.png">
+                <h3>Ethiopia Coffee</h3>
+                <p>$15.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="section7">
+        <div id="section7_1">
+            <h1>𝔒𝔲𝔯 𝔖𝔴𝔢𝔢𝔱 𝔊𝔞𝔩𝔩𝔢𝔯𝔶</h1>
+            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/title-separator.png">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+                sed do eiusmod tempor incididunt ut labore et dolore</p>
+        </div>
+    </div>
+    <div id="section7_2">
+        <img src="https://images.unsplash.com/photo-1587080413959-06b859fb107d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNvZmZlZSUyMGN1cHxlbnwwfHwwfHx8MA%3D%3D"
+            width="300px" height="300px">
+
+        <img src="https://plus.unsplash.com/premium_photo-1674327105074-46dd8319164b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            width="300px" height="300px">
+
+        <img src="https://images.unsplash.com/photo-1610632380989-680fe40816c6?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            height="300px" width="300px">
+
+        <img src="https://images.unsplash.com/photo-1502462041640-b3d7e50d0662?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            width="300px" height="300px">
+    </div>
+    <div id="section7_2">
+        <img src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?q=80&w=1484&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            width="300px" height="300px">
+
+        <img src="https://plus.unsplash.com/premium_photo-1670445287762-372300cdcb77?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            width="300px" height="300px">
+
+        <img src="https://plus.unsplash.com/premium_photo-1671379526961-1aebb82b317b?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            height="300px" width="300px">
+
+        <img src="https://images.unsplash.com/photo-1506372023823-741c83b836fe?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            width="300px" height="300px">
+    </div>
+
+    <div id="section8">
+        <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/clients-img-2-hover.png" alt="">
+        <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/clients-img-3-hover.png" alt="">
+        <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/clients-img-4-hover.png" alt="">
+        <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/clients-img-5-hover.png" alt="">
+        <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/clients-img-6-hover.png" alt="">
+        <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/clients-img-1.png" alt="">
+    </div>
+
+    <div id="section9">
+        <h1>𝖫𝗈𝗋𝖾𝗆 𝗂𝗉𝗌𝗎𝗆 𝖽𝗈𝗅𝗈𝗋 𝗌𝗂𝗍 𝖺𝗆𝖾𝗍, 𝖼𝗈𝗇𝗌𝖾𝖼𝗍𝖾𝗍𝗎𝗋 𝖺𝖽𝗂𝗉𝗂𝗌𝖼𝗂𝗇𝗀 𝖾𝗅𝗂𝗍,
+            𝗌𝖾𝖽 𝖽𝗈</h1>
+        <button id="btn_shop">Contact Us</button>
+    </div>
+
+    <div id="section10">
+        <div>
+            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/logo-footer-sidearea.png">
+            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br>
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br>
+                nostrud exercitation ullamco laboris.”</p>
+            <h1>Stores</h1>
+            <p>Dunsmuir Ave, Los Angeles, CA 90036, USA<br>
+                Atkins Ave, Brooklyn, NY 11208, USA</p>
+
+            <h1>𝓝𝓮𝔀𝓼 𝓐𝓼 𝓕𝓻𝓮𝓼𝓱 𝓐𝓼 𝓞𝓾𝓻 𝓒𝓸𝓯𝓯𝓮𝓮</h1>
+
+            <div id="section10_1">
+                <input type="email" id="email_inp" placeholder="Enter Your Email">
+                <img src="data:image/png;base64,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"
+                    width="84px">
+            </div>
+        </div>
+    </div>
+
+    <footer id="section11">
+        <div>
+            <p>&copy; 2018 Qode Interactive, All Rights Reserved</p>
+        </div>
+        <div id="section11_1">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div id="section11_2">
+            <img src="https://img.freepik.com/premium-psd/facebook-logo-blue-circle_705838-12823.jpg?semt=ais_incoming&w=740&q=80"
+                width="50px">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW5WH0GWJCyWp55v_S4311YRi_ZFUzd2MNCg&s"
+                alt="" width="50px">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdu-gdkkB6hIu6GMxJAUU4iaz_1Ul9vsicsA&s"
+                alt="" width="47px">
+        </div>
+    </footer>
+</body>
+
+</html>
